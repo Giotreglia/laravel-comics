@@ -18,5 +18,6 @@ Route::get('/', function () {
     $footerLinksShop = config('db.footerLinksShop');
     $footerLinksDc = config('db.footerLinksDc');
     $footerLinksSites = config('db.footerLinksSites');
-    return view('home', compact('navLinks', 'footerLinksShop', 'footerLinksDc', 'footerLinksSites'));
+    $comics = config('db.comics');
+    return view('home', compact('navLinks', 'footerLinksShop', 'footerLinksDc', 'footerLinksSites', 'comics'));
 })->name('home');
