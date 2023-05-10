@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $navLinks = config('db.navLinks');
+    $footerLinksShop = config('db.footerLinksShop');
+    $footerLinksDc = config('db.footerLinksDc');
+    $footerLinksSites = config('db.footerLinksSites');
+    return view('home', compact('navLinks', 'footerLinksShop', 'footerLinksDc', 'footerLinksSites'));
+})->name('home');

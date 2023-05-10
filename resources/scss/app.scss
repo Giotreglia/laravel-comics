@@ -1,1 +1,131 @@
 @import '~bootstrap/scss/bootstrap';
+@import "partials/variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+
+footer {
+    height: $footer-height;
+    background-image: url("/resources/images/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    #footer-nav-container {
+
+        padding: 50px 20px;
+        display: flex;
+        gap: 20px;
+
+        h4 {
+            color: white;
+        }
+
+    }
+}
+
+#footer-logo {
+    position: absolute;
+    left: 55%;
+    top: -20%;
+    height: 140%;
+    z-index: 0;
+}
+
+#footer-nav-list {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    a {
+        text-decoration: none;
+        color: $color-text-grey;
+
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+
+#footer-banner {
+    background-color: $color-secondary;
+    height: $header-height;
+
+    h4 {
+        color: $color-primary;
+        margin-bottom: 0;
+        margin-right: 10px;
+        font-weight: bolder;
+
+    }
+}
+
+#banner-btn {
+    padding: 12px 20px;
+    background-color: transparent;
+    font-size: 12px;
+    border: 2px solid $color-primary;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $color-text-grey;
+    }
+
+    &:active {
+        scale: 0.95;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+}
+
+.social {
+    display: inline-block;
+    margin: 10px;
+
+    &:hover {
+        scale: 1.1;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
+
+#follow-claim {
+    display: none;
+}
+
+@media all and (min-width: 768px) {
+    #follow-claim {
+        display: inline-block;
+    }
+
+    #banner-btn {
+        font-size: 20px;
+    }
+
+}
+
+@media all and (min-width: 576px) {
+    #footer-nav-container {
+
+        padding: 50px 20px;
+    }
+}
