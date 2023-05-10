@@ -1,7 +1,7 @@
 <header>
     <div id="header-container" class="container container-xl">
         <div id="logo-container">
-            <a href="#"><img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="logo Dc"></a>
+            <a href="{{route('home')}}"><img src="{{Vite::asset('resources/images/dc-logo.png')}}" alt="logo Dc"></a>
         </div>
 
         <nav>

@@ -220,43 +220,43 @@ return
     'navLinks' => 
     [
         [
-        'href'=> "#characters",
+        'href'=> "characters",
         'text'=> "CHARACTERS"
         ],
         [
-        'href'=> "#comics",
+        'href'=> "comics",
         'text'=> "COMICS"
         ],
         [
-        'href'=> "#movies",
+        'href'=> "movies",
         'text'=> "MOVIES"
         ],
         [
-        'href'=> "#tv",
+        'href'=> "tv",
         'text'=> "TV"
         ],
         [
-        'href'=> "#games",
+        'href'=> "games",
         'text'=> "GAMES"
         ],
         [
-        'href'=> "#collectibles",
+        'href'=> "collectibles",
         'text'=> "COLLECTIBLES"
         ],
         [
-        'href'=> "#videos",
+        'href'=> "videos",
         'text'=> "VIDEOS"
         ],
         [
-        'href'=> "#fans",
+        'href'=> "fans",
         'text'=> "FANS"
         ],
         [
-        'href'=> "#news",
+        'href'=> "news",
         'text'=> "NEWS"
         ],
         [
-        'href'=> "#shop",
+        'href'=> "shop",
         'text'=> "SHOP"
         ]
         ],

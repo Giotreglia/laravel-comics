@@ -1,14 +1,13 @@
 @extends('layouts.app')
 
-@section('page-title', 'DC - Home page')
+@section('page-title', 'DC - Characters')
 
 @section('content')
 <main>
-    <div id="jumbotron"></div>
 
 
     <div id="card-container" class="container container-xl d-flex">
-        <div id="label">Current series</div>
+        <div id="label">Characters</div>
         @foreach ($comics as $comic)
         <div class="my-card">
             <div class="image-wrapper">
